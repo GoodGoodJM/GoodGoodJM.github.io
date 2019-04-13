@@ -1,6 +1,9 @@
 ---
 title: Hexo와 NEXT 테마를 사용하는 블로그 시작.
 categories: blog
+tags:
+  - Hexo
+  - NEXT
 ---
 
 회사를 6월에 퇴사하기로 하고, 공부하면서 Notion에 끄적여 놨던 내용들을 한번 되새김질 하는 시간을 가져보려고 한다.
