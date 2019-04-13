@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="ko">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="GoodGoodMan">
+<meta property="og:url" content="https://goodgoodjm.github.io/index.html">
+<meta property="og:site_name" content="GoodGoodMan">
+<meta property="og:locale" content="ko">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GoodGoodMan">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://goodgoodjm.github.io/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>GoodGoodMan</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GoodGoodMan</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>홈</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>태그</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>카테고리</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>아카이브</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://goodgoodjm.github.io/2019/04/13/blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GoodGoodMan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GoodGoodMan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/13/blog/" class="post-title-link" itemprop="url">Hexo와 NEXT 테마를 사용하는 블로그 시작.</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-04-13 16:47:39" itemprop="dateCreated datePublished" datetime="2019-04-13T16:47:39+09:00">2019-04-13</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>회사를 6월에 퇴사하기로 하고, 공부하면서 Notion에 끄적여 놨던 내용들을 한번 되새김질 하는 시간을 가져보려고 한다.</p>
+<p>포트폴리오도 다시 정리할 겸, 이왕 정리하는 거 블로그로 정리해보면 재밌겠다는 생각이 들어 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>로 블로그를 만드려고 한다.</p>
+<p><code>Hexo</code>를 선택한 이유는 단 하나 “JS로 만들어져서” 이다.</p>
+<p>최근 다시 웹을 공부하면서 JS가 익숙하기도 하고, 직접 코드를 만지거나 테마를 만들면서 프로그램을 파악할 수 있다는게 큰 장점으로 다가왔다, 만일 <code>Jekyll</code>가 Ruby가 아니라 JS였다면 Jekyll를 사용했을 것이다.</p>
+<p>블로그의 생성은 <a href="https://enesto.github.io/2018/11/18/181118_hexo%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener">hexo 블로그 시작하기</a>를 참고하였다. 당장 마음에 드는 테마가 없어 해당 포스트의 테마를 썼다.</p>
+<h2 id="기본-설정"><a href="#기본-설정" class="headerlink" title="기본 설정"></a>기본 설정</h2><p>나는 될 수 있으면 <code>npm install {name} -g</code>를 하지않고 <code>npx</code>를 쓰려고 한다. 전역으로 모듈을 설치해두고, 잊어버린다음 build script를 짯다가 나중에 원인을 찾는게 한참을 걸리는 바보같은 실수를 범한 적이 있어 될수있으면 전역 모듈은 설치하지 않으려 노력한다. (사실 익숙해지면 느린거 빼곤 편하다)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo init blog</span><br><span class="line"><span class="meta">$</span> cd blog</span><br><span class="line"><span class="meta">$</span> npm install</span><br></pre></td></tr></table></figure>
+<p>이후 원한다면 <code>_config.yml</code>의 내용을 수정해 주면된다 나같은 경우는 <code>title</code>, <code>author</code>, <code>language</code>, <code>timezone</code>, <code>url</code> 정도만 수정했다. 자세한 내용은 <a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">공식 문서</a>를 참고하면 된다.</p>
+<p><code>_config.yml</code>의 내용을 수정했다면 로컬서버를 실행하여 확인해 볼 수 있다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="NEXT-테마-설치"><a href="#NEXT-테마-설치" class="headerlink" title="NEXT 테마 설치"></a>NEXT 테마 설치</h2><p>생각보다 <code>Hexo</code>의 기본 테마가 훌륭해서 그냥 쓸까 고민했지만, 살짝 허전해서 마저 테마를 설치했다.</p>
+<p>해당 내용은 위에 적은 <a href="https://enesto.github.io/2018/11/18/181118_hexo%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener">hexo 블로그 시작하기</a>에 너무 잘 나와있어서 별달리 쓸 내용이 없다.</p>
+<p>그냥 거슬려서 기본 테마인 landscape 테마 폴더를 지우는 것 정도만 하였다.</p>
+<h2 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h2><p><code>Hexo</code>는 몇가지 추가적인 설정으로 쉽게 github page에 build된 블로그를 배포할 수 있다.</p>
+<p><code>_config.yml</code>의 Depoly를 설정하고, git인 경우엔 <code>$ npm install --save hexo-depolyer-git</code>를 이용하여 플러그인 모듈을 설치해주면 준비가 끝난다.</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">depoly:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https:/github.com/&lt;UserName&gt;/&lt;UserName&gt;.github.io</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<p>이후 depoly 명령어 <code>$ npx hexo deploy -g</code>를 호출하면 <code>deploy.repo</code>에 해당하는 레포지토리에 depoly 된다.</p>
+<h2 id="Categories-About-같은-추가-페이지-생성"><a href="#Categories-About-같은-추가-페이지-생성" class="headerlink" title="Categories, About 같은 추가 페이지 생성"></a>Categories, About 같은 추가 페이지 생성</h2><p>Theme의 <code>_config.yml</code>를 살펴보다보면, Categories나 About기능을 지원해준다. 해당 설정의 주석을 해제해 줌으로서 기능을 활성화 할 수 있다.</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># 활성화 할 기능들의 주석을 해제</span></span><br><span class="line"><span class="attr">  about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
+<p>주석을 해제하면 블로그에 Catrgories와 About 메뉴가 나타난다. 하지만 해당하는 페이지가 존재하지 않아 다음과 같은 명령어로 페이지를 추가해주어야 한다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo new page categories # &#123;root&#125;/source/categories/index.md 생성</span><br><span class="line"><span class="meta">$</span> npx hexo new page about # &#123;root&#125;/source/about/index.md 생성</span><br></pre></td></tr></table></figure>
+<p>이후 다시 서버를 실행해 확인해 보면 페이지가 정상적으로 표시된다.</p>
+<p>하지만 카테고리의 경우 그냥 빈 페이지만 나타나는데, categories/index.md의 메타정보(헤더)를 아래와 같이 수정해 주면 된다.</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>위와 같이 <code>type</code>을 <code>categories</code>로 변경해 주면 원하는 대로 카테고리 페이지가 나타난다.</p>
+<h2 id="기타"><a href="#기타" class="headerlink" title="기타"></a>기타</h2><p>본인은 여러 포맷을 자주하고, 여러 기기에서 작업을 하는 경우가 많아, Project페이지를 깃으로 올려놓고 작업을 한다.</p>
+<p>여기서, 그냥 git으로 github같은 레포지토리에 올리다보면, <code>themes/</code>디렉토리 아래의 테마가 다른 git레포지토리의 프로젝트이기 때문에 submodule로 취급된다.</p>
+<p>그냥 테마의 <code>.git</code>폴더를 지우고 째로 관리해 버리는 방법도 있지만, 굳이 그러기보단 submodule을 사용하여 관리하면, 주기적으로 원본 레포지토리에서 pull 받아 테마를 최신화 시키기 편하다.</p>
+<p>submodule로 선언하고 레포지토리에 푸시를 한다음, 새로 clone 받을때는 submodule디렉토리가 비어있다. 때문에 <code>git submodule init &amp;&amp; git submodule update</code> 같은 명령어를 사용하여 submodule을 받아와 줘야한다.</p>
+<p>submodule의 파일에 수정을 가할경우(<code>_config.yml</code>) submodule에서 먼저 commit 하고 바깥 레포지토리에서 다시 commit해주어야 한다. submodule기능은 git의 기능이므로 해당 레포지토리에서 다루지 않는다.</p>
+<h2 id="참고문서"><a href="#참고문서" class="headerlink" title="참고문서"></a>참고문서</h2><ul>
+<li><a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">공식 문서</a></li>
+<li><a href="https://enesto.github.io/2018/11/18/181118_hexo%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener">hexo 블로그 시작하기</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">GoodGoodMan</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">포스트</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">카테고리</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">태그</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">GoodGoodMan</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
