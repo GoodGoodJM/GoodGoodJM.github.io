@@ -1,5 +1,5 @@
 ---
-title: 블로그
+title: Hexo와 NEXT 테마를 사용하는 블로그 시작.
 categories: blog
 ---
 
@@ -55,6 +55,29 @@ depoly:
 ```
 
 이후 depoly 명령어 `$ npx hexo deploy -g`를 호출하면 `deploy.repo`에 해당하는 레포지토리에 depoly 된다.
+
+## Categories, About 같은 추가 페이지 생성
+
+Theme의 `_config.yml`를 살펴보다보면, Categories나 About기능을 지원해준다. 해당 설정의 주석을 해제해 줌으로서 기능을 활성화 할 수 있다.
+
+```yml
+...
+menu:
+  ...
+  # 활성화 할 기능들의 주석을 해제
+  about: /about/ || user
+  categories: /categories/ || th
+  ...
+...
+```
+
+주석을 해제하면 블로그에 Catrgories와 About 메뉴가 나타난다. 하지만 해당하는 페이지가 존재하지 않아 다음과 같은 명령어로 페이지를 추가해주어야 한다.
+
+```shell
+$ npx hexo new page categories
+$ npx hexo new page about
+```
+
 
 ## 참고문서
 
