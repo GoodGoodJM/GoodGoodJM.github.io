@@ -74,10 +74,34 @@ menu:
 주석을 해제하면 블로그에 Catrgories와 About 메뉴가 나타난다. 하지만 해당하는 페이지가 존재하지 않아 다음과 같은 명령어로 페이지를 추가해주어야 한다.
 
 ```shell
-$ npx hexo new page categories
-$ npx hexo new page about
+$ npx hexo new page categories # {root}/source/categories/index.md 생성
+$ npx hexo new page about # {root}/source/about/index.md 생성
 ```
 
+이후 다시 서버를 실행해 확인해 보면 페이지가 정상적으로 표시된다.
+
+하지만 카테고리의 경우 그냥 빈 페이지만 나타나는데, categories/index.md의 메타정보(헤더)를 아래와 같이 수정해 주면 된다.
+
+```md
+---
+type: categories
+---
+
+```
+
+위와 같이 `type`을 `categories`로 변경해 주면 원하는 대로 카테고리 페이지가 나타난다.
+
+## 기타
+
+본인은 여러 포맷을 자주하고, 여러 기기에서 작업을 하는 경우가 많아, Project페이지를 깃으로 올려놓고 작업을 한다.
+
+여기서, 그냥 git으로 github같은 레포지토리에 올리다보면, `themes/`디렉토리 아래의 테마가 다른 git레포지토리의 프로젝트이기 때문에 submodule로 취급된다.
+
+그냥 테마의 `.git`폴더를 지우고 째로 관리해 버리는 방법도 있지만, 굳이 그러기보단 submodule을 사용하여 관리하면, 주기적으로 원본 레포지토리에서 pull 받아 테마를 최신화 시키기 편하다.
+
+submodule로 선언하고 레포지토리에 푸시를 한다음, 새로 clone 받을때는 submodule디렉토리가 비어있다. 때문에 `git submodule init && git submodule update` 같은 명령어를 사용하여 submodule을 받아와 줘야한다.
+
+submodule의 파일에 수정을 가할경우(`_config.yml`) submodule에서 먼저 commit 하고 바깥 레포지토리에서 다시 commit해주어야 한다. submodule기능은 git의 기능이므로 해당 레포지토리에서 다루지 않는다.
 
 ## 참고문서
 
