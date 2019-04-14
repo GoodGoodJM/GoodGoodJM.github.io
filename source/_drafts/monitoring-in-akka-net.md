@@ -19,7 +19,7 @@ AKKA.NET Monitoring 프로젝트가 있긴하지만, 사용하려면 모든 Acto
 
 ## AKKA.Tracker의 목표
 
-- 최소한의 코드 수정으로 Tracking이 되어야 한다.
+- 최소한의 코드 수정으로 Tracing이 되어야 한다.
 - Matric을 File로 추출해줄 수 있어야 한다.
 - Visualize하여 메세지의 흐름과 양을 측정할 수 있어야 한다.
 
