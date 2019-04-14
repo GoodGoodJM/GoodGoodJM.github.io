@@ -1,5 +1,5 @@
 ---
-title: Hexo와 NEXT 테마를 사용하는 블로그 시작.
+title: Hexo와 NEXT 테마를 사용하는 블로그 시작
 categories: blog
 tags:
   - Hexo
