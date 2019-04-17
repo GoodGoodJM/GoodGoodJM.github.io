@@ -1,3 +1,4 @@
 ---
 type: categories
+comments: false
 ---
