@@ -337,189 +337,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://goodgoodjm.github.io/blog/disqus-with-hexo-next/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GoodGoodMan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GoodGoodMan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/disqus-with-hexo-next/" class="post-title-link" itemprop="url">Hexo NEXT 템플릿 블로그에 Disqus 댓글 기능 추가하기</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">작성일</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2019-04-14 15:35:58" itemprop="dateCreated datePublished" datetime="2019-04-14T15:35:58+09:00">2019-04-14</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">댓글: </span>
-                <a href="/blog/disqus-with-hexo-next/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="blog/disqus-with-hexo-next/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="참고문서"><a href="#참고문서" class="headerlink" title="참고문서"></a>참고문서</h2><p><a href="/blog/blog">Hexo와 NEXT 테마를 사용하는 블로그 시작.</a> 포스트에서 블로그를 생성하였지만, 댓글 기능이 있으면 좋을 것 같아서 추가하려고 한다.</p>
-<p>NEXT테마는 gitment와 disqus같은 댓글 추가 기능들을 설정만으로 추가, 제거할 수 있게 할수 있도록 기능을 미리 제공한다. 때문에 별다른 추가작업(템플릿을 고친다거나) 이 없이 붙일 수 있다는 점에서 다시한번 놀랐다.</p>
-<p>원래는 <a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">gitment</a>가 좀 더 Gick 해보여서 사용하려 했었지만, AutoBuild때문에 추후 Gitlab으로 넘어갈 생각이라 플랫폼을 덜타는 Disqus를 사용하기로 했다.</p>
-<h2 id="Disqus-가입"><a href="#Disqus-가입" class="headerlink" title="Disqus 가입"></a>Disqus 가입</h2><p>Disqus를 가입, 로그인 한 뒤 우 상단의 메뉴들 중 <code>Add Disqus To Site</code>를 눌러 설정 페이지로 들어간다.</p>
-<p>19/04/14 현재는 중간에 간단한 설명 페이지가 나타나며, 맨 아래의 <code>GET STARTED</code>를 눌러 다음 페이지로 이동한 다음 <code>I want to install Disqus on my site</code>를 눌러 설정을 해야한다.</p>
-<p>설정을 어떻게 해야할 지 잘 모르겠다면 <a href="https://devmjun.github.io/archive/addComments" target="_blank" rel="noopener">Github Blog에 댓글(disqus) 기능 추가하기</a>문서에 잘 나와 있어 참고하면 좋을 듯 하다.</p>
-<h2 id="NEXT의-config-yml에-Disqus설정-추가"><a href="#NEXT의-config-yml에-Disqus설정-추가" class="headerlink" title="NEXT의 _config.yml에 Disqus설정 추가"></a>NEXT의 <code>_config.yml</code>에 Disqus설정 추가</h2><p>자신 페이지의 <code>shortname</code>이 뭔지 확인되었으면, NEXT 테마의 <code>_config.yml</code>의 <code>disqus.enable</code>. <code>disqus.shortname</code>의 값을 바꿔준다.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Disqus</span></span><br><span class="line"><span class="attr">disqus:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  shortname:</span> <span class="string">&lt;short_name&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="확인"><a href="#확인" class="headerlink" title="확인"></a>확인</h2><p>위 설정을 마친 다음 다시 페이지를 확인하면 하단에 disqus댓글 기능이 추가되어 있는 걸 확인할 수 있다.</p>
-<h2 id="참고문서-1"><a href="#참고문서-1" class="headerlink" title="참고문서"></a>참고문서</h2><ul>
-<li><a href="https://equalsequals.io/2017/12/13/how-to-add-disqus-comments-to-hexo-blog/" target="_blank" rel="noopener">Add Disqus Comments to Your Hexo Site</a></li>
-<li><a href="https://devmjun.github.io/archive/addComments" target="_blank" rel="noopener">Github Blog에 댓글(disqus) 기능 추가하기</a></li>
-<li><a href="http://www.cylong.com/blog/2017/03/26/hexo-next-disqus/" target="_blank" rel="noopener">Hexo 集成 Disqus 评论</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://goodgoodjm.github.io/blog/blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -565,25 +382,9 @@
                 
               
 
-              <time title="Post created: 2019-04-13 16:47:39" itemprop="dateCreated datePublished" datetime="2019-04-13T16:47:39+09:00">2019-04-13</time>
+              <time title="Post created: 2019-05-14 13:31:56" itemprop="dateCreated datePublished" datetime="2019-05-14T13:31:56+09:00">2019-05-14</time>
             
 
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2019-04-14 14:52:14" itemprop="dateModified" datetime="2019-04-14T14:52:14+09:00">2019-04-14</time>
-              
             
           </span>
 
@@ -655,10 +456,10 @@
 <p>최근 다시 웹을 공부하면서 JS가 익숙하기도 하고, 직접 코드를 만지거나 테마를 만들면서 프로그램을 파악할 수 있다는게 큰 장점으로 다가왔다, 만일 <code>Jekyll</code>가 Ruby가 아니라 JS였다면 Jekyll를 사용했을 것이다.</p>
 <p>블로그의 생성은 <a href="https://enesto.github.io/2018/11/18/181118_hexo%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener">hexo 블로그 시작하기</a>를 참고하였다. 당장 마음에 드는 테마가 없어 해당 포스트의 테마를 썼다.</p>
 <h2 id="기본-설정"><a href="#기본-설정" class="headerlink" title="기본 설정"></a>기본 설정</h2><p>나는 될 수 있으면 <code>npm install {name} -g</code>를 하지않고 <code>npx</code>를 쓰려고 한다. 전역으로 모듈을 설치해두고, 잊어버린다음 build script를 짯다가 나중에 원인을 찾는게 한참을 걸리는 바보같은 실수를 범한 적이 있어 될수있으면 전역 모듈은 설치하지 않으려 노력한다. (사실 익숙해지면 느린거 빼곤 편하다)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo init blog</span><br><span class="line"><span class="meta">$</span> cd blog</span><br><span class="line"><span class="meta">$</span> npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npx hexo init blog</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> blog</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
 <p>이후 원한다면 <code>_config.yml</code>의 내용을 수정해 주면된다 나같은 경우는 <code>title</code>, <code>author</code>, <code>language</code>, <code>timezone</code>, <code>url</code> 정도만 수정했다. 자세한 내용은 <a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">공식 문서</a>를 참고하면 된다.</p>
 <p><code>_config.yml</code>의 내용을 수정했다면 로컬서버를 실행하여 확인해 볼 수 있다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npx hexo server</span></span><br></pre></td></tr></table></figure>
 <h2 id="NEXT-테마-설치"><a href="#NEXT-테마-설치" class="headerlink" title="NEXT 테마 설치"></a>NEXT 테마 설치</h2><p>생각보다 <code>Hexo</code>의 기본 테마가 훌륭해서 그냥 쓸까 고민했지만, 살짝 허전해서 마저 테마를 설치했다.</p>
 <p>해당 내용은 위에 적은 <a href="https://enesto.github.io/2018/11/18/181118_hexo%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener">hexo 블로그 시작하기</a>에 너무 잘 나와있어서 별달리 쓸 내용이 없다.</p>
 <p>그냥 거슬려서 기본 테마인 landscape 테마 폴더를 지우는 것 정도만 하였다.</p>
@@ -669,7 +470,7 @@
 <h2 id="Categories-About-같은-추가-페이지-생성"><a href="#Categories-About-같은-추가-페이지-생성" class="headerlink" title="Categories, About 같은 추가 페이지 생성"></a>Categories, About 같은 추가 페이지 생성</h2><p>Theme의 <code>_config.yml</code>를 살펴보다보면, Categories나 About기능을 지원해준다. 해당 설정의 주석을 해제해 줌으로서 기능을 활성화 할 수 있다.</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># 활성화 할 기능들의 주석을 해제</span></span><br><span class="line"><span class="attr">  about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
 <p>주석을 해제하면 블로그에 Catrgories와 About 메뉴가 나타난다. 하지만 해당하는 페이지가 존재하지 않아 다음과 같은 명령어로 페이지를 추가해주어야 한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo new page categories # &#123;root&#125;/source/categories/index.md 생성</span><br><span class="line"><span class="meta">$</span> npx hexo new page about # &#123;root&#125;/source/about/index.md 생성</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npx hexo new page categories <span class="comment"># &#123;root&#125;/source/categories/index.md 생성</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npx hexo new page about <span class="comment"># &#123;root&#125;/source/about/index.md 생성</span></span></span><br></pre></td></tr></table></figure>
 <p>이후 다시 서버를 실행해 확인해 보면 페이지가 정상적으로 표시된다.</p>
 <p>하지만 카테고리의 경우 그냥 빈 페이지만 나타나는데, categories/index.md의 메타정보(헤더)를 아래와 같이 수정해 주면 된다.</p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
@@ -682,6 +483,205 @@
 <h2 id="참고문서"><a href="#참고문서" class="headerlink" title="참고문서"></a>참고문서</h2><ul>
 <li><a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">공식 문서</a></li>
 <li><a href="https://enesto.github.io/2018/11/18/181118_hexo%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener">hexo 블로그 시작하기</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://goodgoodjm.github.io/blog/disqus-with-hexo-next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GoodGoodMan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GoodGoodMan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/blog/disqus-with-hexo-next/" class="post-title-link" itemprop="url">Hexo NEXT 템플릿 블로그에 Disqus 댓글 기능 추가하기</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-04-14 15:35:58" itemprop="dateCreated datePublished" datetime="2019-04-14T15:35:58+09:00">2019-04-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2019-05-14 13:31:56" itemprop="dateModified" datetime="2019-05-14T13:31:56+09:00">2019-05-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">댓글: </span>
+                <a href="/blog/disqus-with-hexo-next/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="blog/disqus-with-hexo-next/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="/blog/blog">Hexo와 NEXT 테마를 사용하는 블로그 시작.</a> 포스트에서 블로그를 생성하였지만, 댓글 기능이 있으면 좋을 것 같아서 추가하려고 한다.</p>
+<p>NEXT테마는 gitment와 disqus같은 댓글 추가 기능들을 설정만으로 추가, 제거할 수 있게 할수 있도록 기능을 미리 제공한다. 때문에 별다른 추가작업(템플릿을 고친다거나) 이 없이 붙일 수 있다는 점에서 다시한번 놀랐다.</p>
+<p>원래는 <a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">gitment</a>가 좀 더 Gick 해보여서 사용하려 했었지만, AutoBuild때문에 추후 Gitlab으로 넘어갈 생각이라 플랫폼을 덜타는 Disqus를 사용하기로 했다.</p>
+<h2 id="Disqus-가입"><a href="#Disqus-가입" class="headerlink" title="Disqus 가입"></a>Disqus 가입</h2><p>Disqus를 가입, 로그인 한 뒤 우 상단의 메뉴들 중 <code>Add Disqus To Site</code>를 눌러 설정 페이지로 들어간다.</p>
+<p>19/04/14 현재는 중간에 간단한 설명 페이지가 나타나며, 맨 아래의 <code>GET STARTED</code>를 눌러 다음 페이지로 이동한 다음 <code>I want to install Disqus on my site</code>를 눌러 설정을 해야한다.</p>
+<p>설정을 어떻게 해야할 지 잘 모르겠다면 <a href="https://devmjun.github.io/archive/addComments" target="_blank" rel="noopener">Github Blog에 댓글(disqus) 기능 추가하기</a>문서에 잘 나와 있어 참고하면 좋을 듯 하다.</p>
+<h2 id="NEXT의-config-yml에-Disqus설정-추가"><a href="#NEXT의-config-yml에-Disqus설정-추가" class="headerlink" title="NEXT의 _config.yml에 Disqus설정 추가"></a>NEXT의 <code>_config.yml</code>에 Disqus설정 추가</h2><p>자신 페이지의 <code>shortname</code>이 뭔지 확인되었으면, NEXT 테마의 <code>_config.yml</code>의 <code>disqus.enable</code>. <code>disqus.shortname</code>의 값을 바꿔준다.</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Disqus</span></span><br><span class="line"><span class="attr">disqus:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  shortname:</span> <span class="string">&lt;short_name&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="확인"><a href="#확인" class="headerlink" title="확인"></a>확인</h2><p>위 설정을 마친 다음 다시 페이지를 확인하면 하단에 disqus댓글 기능이 추가되어 있는 걸 확인할 수 있다.</p>
+<h2 id="참고문서"><a href="#참고문서" class="headerlink" title="참고문서"></a>참고문서</h2><ul>
+<li><a href="https://equalsequals.io/2017/12/13/how-to-add-disqus-comments-to-hexo-blog/" target="_blank" rel="noopener">Add Disqus Comments to Your Hexo Site</a></li>
+<li><a href="https://devmjun.github.io/archive/addComments" target="_blank" rel="noopener">Github Blog에 댓글(disqus) 기능 추가하기</a></li>
+<li><a href="http://www.cylong.com/blog/2017/03/26/hexo-next-disqus/" target="_blank" rel="noopener">Hexo 集成 Disqus 评论</a></li>
 </ul>
 
           
