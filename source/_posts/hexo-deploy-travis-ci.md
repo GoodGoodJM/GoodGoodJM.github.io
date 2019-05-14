@@ -1,16 +1,16 @@
 ---
-title: hexo-deploy-travis-ci
+title: Travis-CI로 Hexo블로그 Deploy 자동화 하기
 tags:
   - Hexo
   - NEXT
 categories: blog
-date: 2019-05-14 13:48:39
+date: 2019-05-12 13:48:39
 catecories:
 ---
 
 ## 참고문서
 
-[Hexo와 NEXT 테마를 사용하는 블로그 시작.](/blog/blog) 포스트에 작성한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) `Hexo` 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다.
+[Hexo와 NEXT 테마를 사용하는 블로그 시작.](/blog/blog) 포스트에 언급한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) `Hexo` 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다.
 
 이렇게 작업하던 중 page의 레포지토리의 commit이 계속해서 증발하는 현상을 발견했고, 검색 후에 이러한 현상이 새 프로젝트로 clone받아 deploy할때 발생한다는 것을 알게되었다.
 
