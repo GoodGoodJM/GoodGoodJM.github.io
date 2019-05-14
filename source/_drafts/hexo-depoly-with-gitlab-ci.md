@@ -1,5 +1,5 @@
 ---
-title: hexo-depoly-with-gitlab-ci
+title: hexo-deploy-with-gitlab-ci
 categories: blog
 tags:
   - Hexo
@@ -10,13 +10,13 @@ tags:
 
 이렇게 작업하던 중 page의 레포지토리의 commit이 계속해서 증발하는 현상을 발견했고, 검색 후에 이러한 현상이 새 프로젝트로 clone받아 deploy할때 발생한다는 것을 알게되었다.
 
-`Hexo`에서 고쳐줄 생각은 없어보이고, 나 또한 고쳐서 쓸 생각이 없었다. 그 중, CI/CD 로 `Hexo` 레포지토리에 푸시할때마다 자동으로 depoly 하게 하면 commit이 증발할 일이 없을거 같다는 생각이 들었다.
+`Hexo`에서 고쳐줄 생각은 없어보이고, 나 또한 고쳐서 쓸 생각이 없었다. 그 중, CI/CD 로 `Hexo` 레포지토리에 푸시할때마다 자동으로 deploy 하게 하면 commit이 증발할 일이 없을거 같다는 생각이 들었다.
 
 사실 중간부턴 커밋 로그가 증발한다는 문제보다, 그냥 CI/CD 붙이면 편할거 같다는 생각때문에 작업했다.
 
 ## GitlabRunner
 
-`Hexo`레포지토리에는 Depoly를 위한 정보들이 들어갈 수 있으므로, private으로 하고싶었다.
+`Hexo`레포지토리에는 Deploy를 위한 정보들이 들어갈 수 있으므로, private으로 하고싶었다.
 
 처음엔 `Hexo`레포지토리를 Page와 같이 `Github`에 두고싶었으나, 대부분의 CI/CD 툴이 private repository에는 비용을 청구하였으므로 사용할 수 없었다. (직접 Runner 서버를 실행해야 하는 프로그램은 애초에 후보에도 올리지 않았다.) 때문에 `Gitlab`을 이용하기로 했고, 나는 `UDG`프로젝트 때문에 `Github`보다 `Gitlab`의 사용이 편했다.
 
