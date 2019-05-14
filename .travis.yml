@@ -1,0 +1,32 @@
+language: node_js
+
+node_js:
+  - "6"
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - edit
+
+before_install:
+  - npm install hexo-cli -g
+  - npm install hexo --save
+  - npm install
+
+before_script:
+  - git config --global user.name 'Travis CI'
+  - git config --global user.email 'bot@travis-ci.org'
+  - sed -i'' "s~https://github.com/GoodGoodJM/GoodGoodJM.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/goodgoodjm/GoodGoodJM.github.io.git~" _config.yml
+
+script:
+  - hexo generate
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: sh deploy.sh
+  on:
+    branch: edit
