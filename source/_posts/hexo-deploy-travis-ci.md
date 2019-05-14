@@ -1,10 +1,14 @@
 ---
 title: hexo-deploy-travis-ci
-categories: blog
 tags:
   - Hexo
   - NEXT
+categories: blog
+date: 2019-05-14 13:48:39
+catecories:
 ---
+
+## 참고문서
 
 [Hexo와 NEXT 테마를 사용하는 블로그 시작.](/blog/blog) 포스트에 작성한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) `Hexo` 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다.
 
@@ -18,7 +22,7 @@ tags:
 
 `Hexo`레포지토리에는 Deploy를 위한 정보들이 들어갈 수 있으므로, private으로 하고싶었다. 때문에 `UDG`개발에 주로 사용하던 `Gitlab`에서 `GitlabRunner`로 CI/CD를 하려 했었다.
 
-하지만 문서 작성 중, 막상 설정을 뒤져보니 새 환경에서 `git push`시 `Github`에 로그인 해야하는 부분 말고는 그다지 private한 정보가 없었고 `Travis-CI`가 기본적으로 `Github` 계정으로 로그인을 하고 `GH_TOKEN`으로 `Github`인증이 된다는 점에서 그냥 `Travis-CI`를 이용하면 될거 같다는 생각이 들어 그냥 `Github + Travis-CI`의 조합을 밀어 사용하기로 마음먹었다.
+하지만 문서 작성 중, 막상 설정을 뒤져보니 새 환경에서 `git push`시 `Github`에 로그인 해야하는 부분 말고는 그다지 private한 정보가 없었고 환경변수로 `GithubToken`따위를 넘겨서 인증을 하면 될거같다는 점에서 그냥 `Travis-CI`를 이용하면 될거 같다는 생각이 들어 `Github + Travis-CI`의 조합을 밀어 사용하기로 마음먹었다.
 
 때문에 `Travis-CI`를 사용하여 비슷한 처리를 하는것을 구글링하였고, 아니나 다를까 [더이상 좋게 쓰지 못할정도로 잘 설명된 문서](https://e.printstacktrace.blog/hexo-git-deployer-removes-commits-history-lets-do-something-about-that/)를 발견했다.
 
@@ -91,11 +95,15 @@ deploy:
     branch: edit
 ```
 
-`before_script`의 맨 아래 커맨드(`# 주의!` 주석이 달린 부분)은, `sed`라는 명령어를 이용하여 문자열을 치환해주는 명령이다. 본인의 `_config.yml`의 `deploy.repo` 값이 `https://github.com/GoodGoodJM/GoodGoodJM.github.io.git`으로 되어있기 때문에 위 같이 작성하였다, `~{origin_url}~{changed_ulr}~`의 `origin_url` 부분에 자신의 `deploy.repo`에 지정된 url을 추가해주면 된다.
+`npm install -g`는 쓰지않는 성격이지만 어차피 나의 머신이 아니라 관심 없고, 원작자를 존중하기 위해 그냥 사용했다.
 
-이후 `Travis-CI`를 레포지토리에 붙인 뒤, 대상으로 한 `edit` 브랜치에 푸시를 할때마다 제대로 프로세스가 진행되는지 확인하면 된다.
+`before_script`의 맨 아래 커맨드(`# 주의!` 주석이 달린 부분)은, `sed`라는 명령어를 이용하여 문자열을 치환해주는 명령이다. 본인의 `_config.yml`의 `deploy.repo` 값이 `https://github.com/GoodGoodJM/GoodGoodJM.github.io.git`으로 되어있기 때문에 위 같이 작성하였는데, `~{origin_url}~{changed_url}~`의 `origin_url` 부분에 자신의 `deploy.repo`에 지정된 url을 추가해주면 된다. `changed_url`의 `${GH_TOKEN}`은 `Travis-CI`의 환경변수에 `GH_TOKEN`을 추가해 주어야 한다.
 
-**CI/CD 페이지 사진 추가**
+환경변수 설정은 `Travis-CI`에서 레포지토리를 지정한 다음, setting에서 변경할 수 있으며, Token은 [해당 페이지](https://github.com/settings/tokens)에서 발급 받을 수 있다.
+
+이후 `Travis-CI`를 레포지토리에 붙인 뒤, 이후 edit 브랜치에 푸시를 할 때 마다 제대로 갱신되는지 확인해 주면 된다.
+
+![success](https://i.imgur.com/C6Icwvv.png)
 
 ---
 
