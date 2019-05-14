@@ -5,7 +5,6 @@ tags:
   - NEXT
 categories: blog
 date: 2019-05-12 13:48:39
-catecories:
 ---
 
 ## 참고문서

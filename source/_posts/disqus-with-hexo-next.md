@@ -7,7 +7,6 @@ tags:
   - Comment
 categories: blog
 date: 2019-04-14 15:35:58
-catecories:
 ---
 
 [Hexo와 NEXT 테마를 사용하는 블로그 시작.](/blog/blog) 포스트에서 블로그를 생성하였지만, 댓글 기능이 있으면 좋을 것 같아서 추가하려고 한다.
