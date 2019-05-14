@@ -96,19 +96,19 @@
 
 
 
-  <meta name="description" content="참고문서Hexo와 NEXT 테마를 사용하는 블로그 시작. 포스트에 작성한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) Hexo 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다. 이렇게 작업하던 중 page의 레포지토리의 commit이">
+  <meta name="description" content="참고문서Hexo와 NEXT 테마를 사용하는 블로그 시작. 포스트에 언급한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) Hexo 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다. 이렇게 작업하던 중 page의 레포지토리의 commit이">
 <meta name="keywords" content="Hexo,NEXT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo-deploy-travis-ci">
+<meta property="og:title" content="Travis-CI로 Hexo블로그 Deploy 자동화 하기">
 <meta property="og:url" content="https://goodgoodjm.github.io/blog/hexo-deploy-travis-ci/index.html">
 <meta property="og:site_name" content="GoodGoodMan">
-<meta property="og:description" content="참고문서Hexo와 NEXT 테마를 사용하는 블로그 시작. 포스트에 작성한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) Hexo 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다. 이렇게 작업하던 중 page의 레포지토리의 commit이">
+<meta property="og:description" content="참고문서Hexo와 NEXT 테마를 사용하는 블로그 시작. 포스트에 언급한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) Hexo 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다. 이렇게 작업하던 중 page의 레포지토리의 commit이">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://i.imgur.com/C6Icwvv.png">
-<meta property="og:updated_time" content="2019-05-14T05:23:48.485Z">
+<meta property="og:updated_time" content="2019-05-14T05:38:05.102Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo-deploy-travis-ci">
-<meta name="twitter:description" content="참고문서Hexo와 NEXT 테마를 사용하는 블로그 시작. 포스트에 작성한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) Hexo 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다. 이렇게 작업하던 중 page의 레포지토리의 commit이">
+<meta name="twitter:title" content="Travis-CI로 Hexo블로그 Deploy 자동화 하기">
+<meta name="twitter:description" content="참고문서Hexo와 NEXT 테마를 사용하는 블로그 시작. 포스트에 언급한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) Hexo 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다. 이렇게 작업하던 중 page의 레포지토리의 commit이">
 <meta name="twitter:image" content="https://i.imgur.com/C6Icwvv.png">
 
 
@@ -127,7 +127,7 @@
   };
 </script>
 
-  <title>hexo-deploy-travis-ci | GoodGoodMan</title>
+  <title>Travis-CI로 Hexo블로그 Deploy 자동화 하기 | GoodGoodMan</title>
   
 
 
@@ -360,7 +360,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo-deploy-travis-ci
+          <h1 class="post-title" itemprop="name headline">Travis-CI로 Hexo블로그 Deploy 자동화 하기
 
               
             
@@ -386,12 +386,24 @@
                 
               
 
-              <time title="Post created: 2019-05-14 13:48:39 / Updated at: 14:23:48" itemprop="dateCreated datePublished" datetime="2019-05-14T13:48:39+09:00">2019-05-14</time>
+              <time title="Post created: 2019-05-12 13:48:39" itemprop="dateCreated datePublished" datetime="2019-05-12T13:48:39+09:00">2019-05-12</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2019-05-14 14:38:05" itemprop="dateModified" datetime="2019-05-14T14:38:05+09:00">2019-05-14</time>
               
             
           </span>
@@ -456,7 +468,7 @@
       
 
       
-        <h2 id="참고문서"><a href="#참고문서" class="headerlink" title="참고문서"></a>참고문서</h2><p><a href="/blog/blog">Hexo와 NEXT 테마를 사용하는 블로그 시작.</a> 포스트에 작성한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) <code>Hexo</code> 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다.</p>
+        <h2 id="참고문서"><a href="#참고문서" class="headerlink" title="참고문서"></a>참고문서</h2><p><a href="/blog/blog">Hexo와 NEXT 테마를 사용하는 블로그 시작.</a> 포스트에 언급한대로, 나는 PC의 포맷이 잦고, 여러 기기에서 작업을 하는지라 (이곳 저곳 돌아다니면서 작업하는 것을 좋아하기 때문에) <code>Hexo</code> 프로젝트 자체를 깃헙 레포에 올려놓고 그때 그때 Clone || Pull 받아 포스트를 작성한다.</p>
 <p>이렇게 작업하던 중 page의 레포지토리의 commit이 계속해서 증발하는 현상을 발견했고, 검색 후에 이러한 현상이 새 프로젝트로 clone받아 deploy할때 발생한다는 것을 알게되었다.</p>
 <p><code>Hexo</code>에서 고쳐줄 생각은 없어보이고, 나 또한 고쳐서 쓸 생각이 없었다. 그 중, CI/CD 로 <code>Hexo</code> 레포지토리에 푸시할때마다 자동으로 deploy 하게 하면 commit이 증발할 일이 없을거 같다는 생각이 들었다.</p>
 <p>사실 중간부턴 커밋 로그가 증발한다는 문제보다, 그냥 CI/CD 붙이면 편할거 같다는 생각때문에 작업했다.</p>
@@ -862,7 +874,7 @@
   var disqus_config = function() {
     this.page.url = "https://goodgoodjm.github.io/blog/hexo-deploy-travis-ci/";
     this.page.identifier = "blog/hexo-deploy-travis-ci/";
-    this.page.title = 'hexo-deploy-travis-ci';
+    this.page.title = 'Travis-CI로 Hexo블로그 Deploy 자동화 하기';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
