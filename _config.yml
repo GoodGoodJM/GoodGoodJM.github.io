@@ -81,3 +81,9 @@ deploy:
   type: git
   repo: https://github.com/GoodGoodJM/GoodGoodJM.github.io.git
   branch: master
+
+# sitemap.xml
+sitemap:
+  path: sitemap.xml
+  tag: false
+  category: false
