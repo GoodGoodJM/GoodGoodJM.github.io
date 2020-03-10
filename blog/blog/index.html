@@ -104,12 +104,14 @@
 <meta property="og:site_name" content="GoodGoodMan">
 <meta property="og:description" content="회사를 6월에 퇴사하기로 하고, 공부하면서 Notion에 끄적여 놨던 내용들을 한번 되새김질 하는 시간을 가져보려고 한다. 포트폴리오도 다시 정리할 겸, 이왕 정리하는 거 블로그로 정리해보면 재밌겠다는 생각이 들어 Hexo로 블로그를 만드려고 한다. Hexo를 선택한 이유는 단 하나 “JS로 만들어져서” 이다. 최근 다시 웹을 공부하면서 JS가 익숙하기도">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2020-03-10T03:20:06.829Z">
+<meta property="og:updated_time" content="2020-03-10T11:53:17.158Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo와 NEXT 테마를 사용하는 블로그 시작">
 <meta name="twitter:description" content="회사를 6월에 퇴사하기로 하고, 공부하면서 Notion에 끄적여 놨던 내용들을 한번 되새김질 하는 시간을 가져보려고 한다. 포트폴리오도 다시 정리할 겸, 이왕 정리하는 거 블로그로 정리해보면 재밌겠다는 생각이 들어 Hexo로 블로그를 만드려고 한다. Hexo를 선택한 이유는 단 하나 “JS로 만들어져서” 이다. 최근 다시 웹을 공부하면서 JS가 익숙하기도">
 
 
+
+  <link rel="alternate" href="/rss2.xml" title="GoodGoodMan" type="application/atom+xml">
 
 
 
@@ -412,7 +414,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2020-03-10 12:20:06" itemprop="dateModified" datetime="2020-03-10T12:20:06+09:00">2020-03-10</time>
+                <time title="Updated at: 2020-03-10 20:53:17" itemprop="dateModified" datetime="2020-03-10T20:53:17+09:00">2020-03-10</time>
               
             
           </span>
@@ -490,10 +492,10 @@
 <p>최근 다시 웹을 공부하면서 JS가 익숙하기도 하고, 직접 코드를 만지거나 테마를 만들면서 프로그램을 파악할 수 있다는게 큰 장점으로 다가왔다, 만일 <code>Jekyll</code>가 Ruby가 아니라 JS였다면 Jekyll를 사용했을 것이다.</p>
 <p>블로그의 생성은 <a href="https://enesto.github.io/2018/11/18/181118_hexo%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener">hexo 블로그 시작하기</a>를 참고하였다. 당장 마음에 드는 테마가 없어 해당 포스트의 테마를 썼다.</p>
 <h2 id="기본-설정"><a href="#기본-설정" class="headerlink" title="기본 설정"></a>기본 설정</h2><p>나는 될 수 있으면 <code>npm install {name} -g</code>를 하지않고 <code>npx</code>를 쓰려고 한다. 전역으로 모듈을 설치해두고, 잊어버린다음 build script를 짯다가 나중에 원인을 찾는게 한참을 걸리는 바보같은 실수를 범한 적이 있어 될수있으면 전역 모듈은 설치하지 않으려 노력한다. (사실 익숙해지면 느린거 빼곤 편하다)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo init blog</span><br><span class="line"><span class="meta">$</span> cd blog</span><br><span class="line"><span class="meta">$</span> npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npx hexo init blog</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> blog</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
 <p>이후 원한다면 <code>_config.yml</code>의 내용을 수정해 주면된다 나같은 경우는 <code>title</code>, <code>author</code>, <code>language</code>, <code>timezone</code>, <code>url</code> 정도만 수정했다. 자세한 내용은 <a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">공식 문서</a>를 참고하면 된다.</p>
 <p><code>_config.yml</code>의 내용을 수정했다면 로컬서버를 실행하여 확인해 볼 수 있다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npx hexo server</span></span><br></pre></td></tr></table></figure>
 <h2 id="NEXT-테마-설치"><a href="#NEXT-테마-설치" class="headerlink" title="NEXT 테마 설치"></a>NEXT 테마 설치</h2><p>생각보다 <code>Hexo</code>의 기본 테마가 훌륭해서 그냥 쓸까 고민했지만, 살짝 허전해서 마저 테마를 설치했다.</p>
 <p>해당 내용은 위에 적은 <a href="https://enesto.github.io/2018/11/18/181118_hexo%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" target="_blank" rel="noopener">hexo 블로그 시작하기</a>에 너무 잘 나와있어서 별달리 쓸 내용이 없다.</p>
 <p>그냥 거슬려서 기본 테마인 landscape 테마 폴더를 지우는 것 정도만 하였다.</p>
@@ -504,7 +506,7 @@
 <h2 id="Categories-About-같은-추가-페이지-생성"><a href="#Categories-About-같은-추가-페이지-생성" class="headerlink" title="Categories, About 같은 추가 페이지 생성"></a>Categories, About 같은 추가 페이지 생성</h2><p>Theme의 <code>_config.yml</code>를 살펴보다보면, Categories나 About기능을 지원해준다. 해당 설정의 주석을 해제해 줌으로서 기능을 활성화 할 수 있다.</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># 활성화 할 기능들의 주석을 해제</span></span><br><span class="line"><span class="attr">  about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
 <p>주석을 해제하면 블로그에 Catrgories와 About 메뉴가 나타난다. 하지만 해당하는 페이지가 존재하지 않아 다음과 같은 명령어로 페이지를 추가해주어야 한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npx hexo new page categories # &#123;root&#125;/source/categories/index.md 생성</span><br><span class="line"><span class="meta">$</span> npx hexo new page about # &#123;root&#125;/source/about/index.md 생성</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npx hexo new page categories <span class="comment"># &#123;root&#125;/source/categories/index.md 생성</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npx hexo new page about <span class="comment"># &#123;root&#125;/source/about/index.md 생성</span></span></span><br></pre></td></tr></table></figure>
 <p>이후 다시 서버를 실행해 확인해 보면 페이지가 정상적으로 표시된다.</p>
 <p>하지만 카테고리의 경우 그냥 빈 페이지만 나타나는데, categories/index.md의 메타정보(헤더)를 아래와 같이 수정해 주면 된다.</p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
@@ -712,6 +714,13 @@
             </nav>
           
 
+          
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           

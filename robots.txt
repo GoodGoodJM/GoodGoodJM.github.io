@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://goodgoodjm.github.io/sitemap.xml
