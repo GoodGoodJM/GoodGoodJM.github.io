@@ -93,3 +93,8 @@ robotstxt:
   allow:
     - /
   sitemap: https://goodgoodjm.github.io/sitemap.xml
+
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 10
