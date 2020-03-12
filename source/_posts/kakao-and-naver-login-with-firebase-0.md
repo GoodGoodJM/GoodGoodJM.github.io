@@ -1,16 +1,16 @@
 ---
-title: 'AWS Lambda와 Firebase Auth를 이용하여 Kakao, Naver 로그인 구현하기 - 0 [전굽기]'
+title: 'AWS Lambda 와 Firebase Auth 를 이용하여 Kakao, Naver 로그인 구현하기 - 0 [전굽기]'
+date: 2020-03-10 10:37:32
+categories: programming
 tags:
   - firebase-auth
   - firebase
-categories: programming
-date: 2020-03-10 10:37:32
 ---
 
-> AWS Lambda와 Firebase Auth를 이용하여 Kakao, Naver 로그인 구현하기
-> - [AWS Lambda와 Firebase Auth를 이용하여 Kakao, Naver 로그인 구현하기 - 0 [전굽기]](/programming/kakao-and-naver-login-with-firebase-0)
-> - [AWS Lambda와 Firebase Auth를 이용하여 Kakao, Naver 로그인 구현하기 - 1 [AWS Lambda 배포 설정]](/programming/kakao-and-naver-login-with-firebase-1)
-> - [AWS Lambda와 Firebase Auth를 이용하여 Kakao, Naver 로그인 구현하기 - 2 [Kakao, Naver 로그인 적용]](/programming/kakao-and-naver-login-with-firebase-2)
+> AWS Lambda 와 Firebase Auth 를 이용하여 Kakao, Naver 로그인 구현하기
+> - [AWS Lambda 와 Firebase Auth 를 이용하여 Kakao, Naver 로그인 구현하기 - 0 [전굽기]](/programming/kakao-and-naver-login-with-firebase-0)
+> - [AWS Lambda 와 Firebase Auth 를 이용하여 Kakao, Naver 로그인 구현하기 - 1 [AWS Lambda 배포 설정]](/programming/kakao-and-naver-login-with-firebase-1)
+> - [AWS Lambda 와 Firebase Auth 를 이용하여 Kakao, Naver 로그인 구현하기 - 2 [Kakao, Naver 로그인 적용]](/programming/kakao-and-naver-login-with-firebase-2)
 
 
 관리하기 쉬운 코드는 내가 관리할 코드가 적은 코드라고 생각한다, 때문에 나는 관리하는 코드를 줄이는 것을 좋아한다.
