@@ -8,32 +8,8 @@
     </url>
 
     <url>
-        <loc>https://goodgoodjm.github.io/blog/blog/</loc>
-        <lastmod>2020-03-12T10:02:03.886Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://goodgoodjm.github.io/blog/disqus-with-hexo-next/</loc>
-        <lastmod>2020-03-12T10:02:03.886Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://goodgoodjm.github.io/blog/hexo-deploy-travis-ci/</loc>
-        <lastmod>2020-03-12T10:02:03.886Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://goodgoodjm.github.io/programming/kakao-and-naver-login-with-firebase-0/</loc>
-        <lastmod>2020-03-12T10:02:03.886Z</lastmod>
+        <lastmod>2020-09-07T01:57:30.088Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,7 +17,7 @@
 
     <url>
         <loc>https://goodgoodjm.github.io/programming/kakao-and-naver-login-with-firebase-1/</loc>
-        <lastmod>2020-03-12T10:02:03.886Z</lastmod>
+        <lastmod>2020-09-07T01:57:30.088Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -49,7 +25,7 @@
 
     <url>
         <loc>https://goodgoodjm.github.io/etc/log-20190612/</loc>
-        <lastmod>2020-03-12T10:02:03.886Z</lastmod>
+        <lastmod>2020-09-07T01:57:30.088Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -57,7 +33,7 @@
 
     <url>
         <loc>https://goodgoodjm.github.io/etc/log-20191018/</loc>
-        <lastmod>2020-03-12T10:02:03.886Z</lastmod>
+        <lastmod>2020-09-07T01:57:30.088Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -65,7 +41,31 @@
 
     <url>
         <loc>https://goodgoodjm.github.io/etc/log-20191024/</loc>
-        <lastmod>2020-03-12T10:02:03.886Z</lastmod>
+        <lastmod>2020-09-07T01:57:30.088Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://goodgoodjm.github.io/blog/blog/</loc>
+        <lastmod>2020-09-07T01:57:30.084Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://goodgoodjm.github.io/blog/disqus-with-hexo-next/</loc>
+        <lastmod>2020-09-07T01:57:30.084Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://goodgoodjm.github.io/blog/hexo-deploy-travis-ci/</loc>
+        <lastmod>2020-09-07T01:57:30.084Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
